@@ -1,8 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import logoDark from "../../../public/SR logo dark bg.png";
-import keyboardImg from "../../../public/keyboard.jpg";
 import useTypingEffect from "../hooks/useTypingEffect";
 import { useState } from "react";
 
@@ -21,7 +19,7 @@ export default function HeroArea() {
                 <header className="absolute inset-x-0 top-0 z-50">
                     <nav className="flex items-center justify-between py-6 px-4 xl:px-0 max-w-7xl mx-auto" aria-label="Global">
                         <a href="#" className="-m-1.5 p-1.5">
-                            <Image className="h-10 lg:h-14 w-auto" src={logoDark} alt="logo" />
+                            <Image className="h-10 lg:h-14 w-auto" src={'/SR logo dark bg.png'} alt="logo" width={50} height={50} />
                         </a>
                         <div className="flex lg:hidden">
                             <button
@@ -50,7 +48,7 @@ export default function HeroArea() {
                             <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-cyan-950 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
                                 <div className="flex items-center justify-between">
                                     <a href="#" className="-m-1.5 p-1.5">
-                                        <Image className="h-8 w-auto" src={logoDark} alt="logo" />
+                                        <Image className="h-8 w-auto" src={'/SR logo dark bg.png'} alt="logo" width={50} height={50} />
                                     </a>
                                     <button
                                         type="button"
@@ -79,7 +77,7 @@ export default function HeroArea() {
                 </header>
 
                 <div className="relative isolate overflow-hidden pt-14">
-                    <Image src={keyboardImg} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />
+                    <Image src={'/keyboard.jpg'} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" width={50}  height={50} />
                     <div className="absolute inset-0 bg-black opacity-45"></div> {/* Dark tint layer */}
                     <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-52 relative z-10">
                         <div className="text-center">

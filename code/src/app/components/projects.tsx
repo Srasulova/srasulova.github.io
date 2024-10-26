@@ -1,8 +1,3 @@
-import wombot from "../../../public/wombot.png"
-import moneyball from "../../../public/moneyball.png"
-import ratatouille from "../../../public/ratatouille.png"
-
-
 import ProjectArticle from "./projectArticle";
 
 export default function Projects() {
@@ -12,7 +7,7 @@ export default function Projects() {
             description: "App provides users with up-to-date baseball statistics and standings. Users can log in, sign up, and track their favorite teams and players.",
             teckStack: "Next.js, TypeScript, Tailwind CSS, Node.js, Express, Jest",
             githubURL: "https://github.com/Srasulova/Moneyball",
-            img: moneyball,
+            img: "/moneyball.png",
             url: ""
         },
         {
@@ -20,7 +15,7 @@ export default function Projects() {
             description: "Users can search restaurants by address, location, or zip code, create lists for wishlist, favorites, and visited spots, and manage notes and reviews.",
             teckStack: "Python, Flask, SQLite, SQLAlchemy, Jinja, JavaScript, Tailwind CSS",
             githubURL: "https://github.com/Srasulova/Ratatouille",
-            img: ratatouille,
+            img: "/ratatouille.png",
             url: ""
         },
         {
@@ -28,7 +23,7 @@ export default function Projects() {
             description: "AI-driven facial recognition secures access by identifying authorized users, recording attempts, enabling overrides, and sending real-time alerts for unauthorized entries.",
             teckStack: "Next.js, TypeScript, Tailwind CSS, Java, Python, Flask, DynamoDB, AWS",
             githubURL: "https://github.com/allaboutmike/dsd-team-wombat",
-            img: wombot,
+            img: "/wombot.png",
             url: ""
         }
     ];

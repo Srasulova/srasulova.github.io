@@ -1,5 +1,4 @@
 import Image from "next/image";
-import talkIsCheap from "../../../public/talkIsCheapBG.jpg"
 
 export default function Footer() {
     return (
@@ -7,9 +6,11 @@ export default function Footer() {
             <footer className="relative w-screen">
                 <div className="absolute inset-0 -z-10">
                     <Image
-                        src={talkIsCheap}
+                        src={'/talkIsCheapBG.jpg'}
                         alt=""
                         className="h-full w-full object-cover object-bottom blur-sm"
+                        width={50}
+                        height={50}
                     />
                     <div className="absolute inset-0 bg-black opacity-35"></div> {/* Dark tint layer */}
                 </div>
