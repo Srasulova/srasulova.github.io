@@ -35,7 +35,7 @@ export default function MyTechStack() {
                             <Image className="max-h-14 w-full object-contain object-center" src={'/Git-Icon-1788C.png'} alt="git logo" width="150" height="48" />
                             <Image className="max-h-14 w-full object-contain object-center" src={'/WordPress-logotype-simplified.png'} alt="wordpress logo" width="110" height="48" />
                             <Image className="max-h-14 w-full object-contain object-center" src={'/Adobe_Photoshop_CC_icon.svg.png'} alt="photoshop logo" width="136" height="48" />
-                            <Image className="max-h-14 w-full object-contain object-center" src={'/appsmith-logos-idMrtZKhob.png"'} alt="appsmith logo" width="150" height="48" />
+                            <Image className="max-h-14 w-full object-contain object-center" src={'/appsmith-logos-idMrtZKhob.png'} alt="appsmith logo" width="150" height="48" />
                         </div>
                     </div>
                 </div>
