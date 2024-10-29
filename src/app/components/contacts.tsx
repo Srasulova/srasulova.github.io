@@ -2,7 +2,7 @@
 export default function Contacts() {
     return (
         <>
-            <div className="bg-white my-16" id="contacts">
+            <div className="bg-white mb-16" id="contacts">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-3xl text-center ">
                         <h2 className="text-3xl mb-10 font-bold tracking-wide text-cyan-600 sm:text-4xl">&#60;Get in touch &#47;&#62;</h2>
