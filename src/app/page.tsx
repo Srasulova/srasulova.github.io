@@ -1,10 +1,13 @@
-import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 import AboutMe from "./components/aboutMe";
 import HeroArea from "./components/hero";
 import MyTechStack from "./components/myTeckStack";
 import Projects from "./components/projects";
 import Footer from "./components/footer";
 import Contacts from "./components/contacts";
+
+// Dynamically import framer-motion's `motion.div` with SSR disabled
+const MotionDiv = dynamic(() => import("framer-motion").then((mod) => mod.motion.div), { ssr: false });
 
 export default function Home() {
   // Animation properties for scroll-in effect
@@ -18,41 +21,41 @@ export default function Home() {
       <main>
         <HeroArea />
 
-        <motion.div
+        <MotionDiv
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={fadeInVariants}
         >
           <AboutMe />
-        </motion.div>
+        </MotionDiv>
 
-        <motion.div
+        <MotionDiv
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={fadeInVariants}
         >
           <MyTechStack />
-        </motion.div>
+        </MotionDiv>
 
-        <motion.div
+        <MotionDiv
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={fadeInVariants}
         >
           <Projects />
-        </motion.div>
+        </MotionDiv>
 
-        <motion.div
+        <MotionDiv
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={fadeInVariants}
         >
           <Contacts />
-        </motion.div>
+        </MotionDiv>
 
         <Footer />
       </main>
