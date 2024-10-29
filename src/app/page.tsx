@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import AboutMe from "./components/aboutMe";
 import HeroArea from "./components/hero";
 import MyTechStack from "./components/myTeckStack";
@@ -9,6 +10,8 @@ import Footer from "./components/footer";
 import Contacts from "./components/contacts";
 
 export default function Home() {
+  const [scrollDirection, setScrollDirection] = useState("down");
+
   // Animation properties for scroll-in effect
   const fadeInVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -21,21 +24,42 @@ export default function Home() {
     visible: { scaleX: 1, transition: { duration: 0.5 } },
   };
 
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      setScrollDirection(currentScrollY > lastScrollY ? "down" : "up");
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       <main>
         <HeroArea />
+
+        <motion.div
+          className="h-0.5 my-8 bg-gradient-to-r from-cyan-400 via-transparent to-fuchsia-500"
+          variants={lineVariants}
+          initial="hidden"
+          animate={scrollDirection === "down" ? "visible" : "hidden"}
+        />
 
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={fadeInVariants}>
           <AboutMe />
         </motion.div>
 
         <motion.div
-          className="h-1 my-8 bg-gradient-to-r from-cyan-400 via-transparent to-fuchsia-500"
+          className="h-0.5 my-8 bg-gradient-to-r from-cyan-400 via-transparent to-fuchsia-500"
           variants={lineVariants}
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          animate={scrollDirection === "down" ? "visible" : "hidden"}
         />
 
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={fadeInVariants}>
@@ -43,11 +67,10 @@ export default function Home() {
         </motion.div>
 
         <motion.div
-          className="h-1 my-8 bg-gradient-to-r from-cyan-400 via-transparent to-fuchsia-500"
+          className="h-0.5 my-8 bg-gradient-to-r from-cyan-400 via-transparent to-fuchsia-500"
           variants={lineVariants}
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          animate={scrollDirection === "down" ? "visible" : "hidden"}
         />
 
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={fadeInVariants}>
@@ -55,11 +78,10 @@ export default function Home() {
         </motion.div>
 
         <motion.div
-          className="h-1 my-8 bg-gradient-to-r from-cyan-400 via-transparent to-fuchsia-500"
+          className="h-0.5 my-8 bg-gradient-to-r from-cyan-400 via-transparent to-fuchsia-500"
           variants={lineVariants}
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          animate={scrollDirection === "down" ? "visible" : "hidden"}
         />
 
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={fadeInVariants}>
