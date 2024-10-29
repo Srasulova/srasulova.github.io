@@ -13,7 +13,7 @@ export default function Projects() {
         {
             title: "Ratatouille",
             description: "Users can search restaurants by address, location, or zip code, create lists for wishlist, favorites, and visited spots, and manage notes and reviews.",
-            teckStack: "Python, Flask, SQLite, SQLAlchemy, Jinja, JavaScript, Tailwind CSS, Jasmine",
+            teckStack: "Python, Flask, SQLite, SQLAlchemy, Jinja, JavaScript, Tailwind CSS",
             githubURL: "https://github.com/Srasulova/Ratatouille",
             img: "/ratatouille.png",
             url: ""
