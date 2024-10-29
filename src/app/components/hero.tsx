@@ -78,7 +78,7 @@ export default function HeroArea() {
 
                 <div className="relative isolate overflow-hidden pt-14">
                     <Image src={'/keyboard.jpg'} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" width={50} height={50} />
-                    <div className="absolute inset-0 bg-black opacity-45"></div> {/* Dark tint layer */}
+                    <div className="absolute inset-0 bg-black opacity-55"></div> {/* Dark tint layer */}
                     <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-52 relative z-10">
                         <div className="text-center">
                             <h1 className="text-balance text-4xl font-medium text-white sm:text-6xl">{typedText}</h1>
