@@ -9,10 +9,14 @@ import Footer from "./components/footer";
 import Contacts from "./components/contacts";
 
 export default function Home() {
-  // Animation properties for scroll-in effect
+  // Animation properties for a slower, smoother scroll-in effect
   const fadeInVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: [0.42, 0, 0.58, 1] },
+    },
   };
 
   return (
