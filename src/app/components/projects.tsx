@@ -5,7 +5,7 @@ export default function Projects() {
         {
             title: "MoneyBall",
             description: "App provides users with up-to-date baseball statistics and standings. Users can log in, sign up, and track their favorite teams and players.",
-            teckStack: "Next.js, TypeScript, Tailwind CSS, Node.js, Express, Jest",
+            teckStack: "Next.js, TypeScript, Tailwind CSS, Node.js, Express, Postgres, Jest",
             githubURL: "https://github.com/Srasulova/Moneyball",
             img: "/moneyball.png",
             url: ""
@@ -13,7 +13,7 @@ export default function Projects() {
         {
             title: "Ratatouille",
             description: "Users can search restaurants by address, location, or zip code, create lists for wishlist, favorites, and visited spots, and manage notes and reviews.",
-            teckStack: "Python, Flask, SQLite, SQLAlchemy, Jinja, JavaScript, Tailwind CSS",
+            teckStack: "Python, Flask, SQLite, SQLAlchemy, Jinja, JavaScript, Tailwind CSS, Jasmine",
             githubURL: "https://github.com/Srasulova/Ratatouille",
             img: "/ratatouille.png",
             url: ""
@@ -24,6 +24,14 @@ export default function Projects() {
             teckStack: "Next.js, TypeScript, Tailwind CSS, Java, Python, Flask, DynamoDB, AWS",
             githubURL: "https://github.com/allaboutmike/dsd-team-wombat",
             img: "/wombot.png",
+            url: ""
+        },
+        {
+            title: "Jobly",
+            description: "An application for users to search companies, explore job listings, apply for positions, and view salary ranges.",
+            teckStack: "React.js, CSS, Node.js, Express, Postgres, Jest",
+            githubURL: "https://github.com/Srasulova/react-jobly",
+            img: "/jobly.png",
             url: ""
         }
     ];
