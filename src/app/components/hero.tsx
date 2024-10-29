@@ -82,7 +82,7 @@ export default function HeroArea() {
                     <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-52 relative z-10">
                         <div className="text-center">
                             <h1 className="text-balance text-4xl font-medium text-white sm:text-6xl">{typedText}</h1>
-                            <p className="mt-6 text-xs text-white mb-2">Thanks for visiting! This is just the first version of my portfolio, and I’m actively working on improving it.</p>
+                            <p className="mt-6 text-xs text-white mb-2">Thanks for visiting! This is just the early version of my portfolio. I’m actively working on improving it.</p>
                             <p className="mt-6 text-xs text-white">Stay tuned for updates!</p>
                             <div className="mt-10 flex items-center justify-center gap-x-6 opacity-70 hover:opacity-90">
                                 <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-pink-200 rounded-lg group bg-gradient-to-br from-cyan-400 to-pink-500  hover:text-white dark:text-white focus:ring-2 focus:outline-none hover:from-cyan-600 hover:to-pink-800 focus:ring-pink-600 dark:focus:ring-purple-800">
