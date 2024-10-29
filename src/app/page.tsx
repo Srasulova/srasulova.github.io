@@ -22,7 +22,7 @@ export default function Home() {
   // Animation properties for the separator
   const lineVariants = {
     hidden: { scaleX: 0 },
-    visible: { scaleX: 1, transition: { duration: 0.5 } },
+    visible: { scaleX: 1, transition: { duration: 0.8, ease: [0.42, 0, 0.58, 1] } },
   };
 
   useEffect(() => {
