@@ -31,7 +31,7 @@ export default function Home() {
         </motion.div>
 
         <motion.div
-          className="h-2 my-8 bg-gradient-to-r from-cyan-400 via-transparent to-fuchsia-500"
+          className="h-1 my-8 bg-gradient-to-r from-cyan-400 via-transparent to-fuchsia-500"
           variants={lineVariants}
           initial="hidden"
           whileInView="visible"
@@ -43,7 +43,7 @@ export default function Home() {
         </motion.div>
 
         <motion.div
-          className="h-2 my-8 bg-gradient-to-r from-cyan-400 via-transparent to-fuchsia-500"
+          className="h-1 my-8 bg-gradient-to-r from-cyan-400 via-transparent to-fuchsia-500"
           variants={lineVariants}
           initial="hidden"
           whileInView="visible"
@@ -55,7 +55,7 @@ export default function Home() {
         </motion.div>
 
         <motion.div
-          className="h-2 my-8 bg-gradient-to-r from-cyan-400 via-transparent to-fuchsia-500"
+          className="h-1 my-8 bg-gradient-to-r from-cyan-400 via-transparent to-fuchsia-500"
           variants={lineVariants}
           initial="hidden"
           whileInView="visible"
