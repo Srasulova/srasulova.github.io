@@ -11,6 +11,7 @@ import Contacts from "./components/contacts";
 
 export default function Home() {
   const [scrollDirection, setScrollDirection] = useState("down");
+  const [hasScrolledDown, setHasScrolledDown] = useState(false); // Track if scrolled down
 
   // Animation properties for scroll-in effect
   const fadeInVariants = {
@@ -29,6 +30,12 @@ export default function Home() {
 
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
+
+      // Check if scrolling down and set the flag
+      if (currentScrollY > lastScrollY && !hasScrolledDown) {
+        setHasScrolledDown(true); // User has scrolled down for the first time
+      }
+
       setScrollDirection(currentScrollY > lastScrollY ? "down" : "up");
       lastScrollY = currentScrollY;
     };
@@ -37,19 +44,12 @@ export default function Home() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [hasScrolledDown]);
 
   return (
     <div>
       <main>
         <HeroArea />
-
-        <motion.div
-          className="h-0.5 my-8 bg-gradient-to-r from-cyan-400 via-transparent to-fuchsia-500"
-          variants={lineVariants}
-          initial="hidden"
-          animate={scrollDirection === "down" ? "visible" : "hidden"}
-        />
 
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={fadeInVariants}>
           <AboutMe />
@@ -59,7 +59,7 @@ export default function Home() {
           className="h-0.5 my-8 bg-gradient-to-r from-cyan-400 via-transparent to-fuchsia-500"
           variants={lineVariants}
           initial="hidden"
-          animate={scrollDirection === "down" ? "visible" : "hidden"}
+          animate={hasScrolledDown ? (scrollDirection === "down" ? "visible" : "hidden") : "hidden"}
         />
 
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={fadeInVariants}>
@@ -70,7 +70,7 @@ export default function Home() {
           className="h-0.5 my-8 bg-gradient-to-r from-cyan-400 via-transparent to-fuchsia-500"
           variants={lineVariants}
           initial="hidden"
-          animate={scrollDirection === "down" ? "visible" : "hidden"}
+          animate={hasScrolledDown ? (scrollDirection === "down" ? "visible" : "hidden") : "hidden"}
         />
 
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={fadeInVariants}>
@@ -81,7 +81,7 @@ export default function Home() {
           className="h-0.5 my-8 bg-gradient-to-r from-cyan-400 via-transparent to-fuchsia-500"
           variants={lineVariants}
           initial="hidden"
-          animate={scrollDirection === "down" ? "visible" : "hidden"}
+          animate={hasScrolledDown ? (scrollDirection === "down" ? "visible" : "hidden") : "hidden"}
         />
 
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={fadeInVariants}>
