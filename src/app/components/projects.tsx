@@ -37,7 +37,7 @@ export default function Projects() {
         {
             title: "Twitter clone",
             description: "A social media app where users can follow others, post comments, and connect with friends.",
-            teckStack: "Python, Jinja, SQLite, Jasmine",
+            teckStack: "Python, Flask, Jinja, SQLite, Bootstrap",
             githubURL: "https://github.com/hatchways-community/twitter-clone-69a69673e2994a10846770b8da7c4411",
             img: "/twitterClone.png",
             url: ""
