@@ -29,6 +29,7 @@ export default function RootLayout({
         <link sizes="any" rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preload" href="/keyboard.jpg" as="image" />
         <link
           href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&display=swap"
           rel="stylesheet"
