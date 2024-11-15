@@ -48,7 +48,7 @@ export default function Home() {
 
   return (
     <div>
-      <main>
+      <main className="bg-white">
         <HeroArea />
 
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={fadeInVariants}>
