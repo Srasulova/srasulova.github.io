@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <>
             <footer className="relative w-screen">
-                <div className="absolute inset-0 -z-10">
+                <div className="absolute inset-0 z-10">
                     <Image
                         src={'/talkIsCheapBG.jpg'}
                         alt=""
